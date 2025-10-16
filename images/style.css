@@ -1,0 +1,256 @@
+@import url(variables.css);
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    max-width: 1440px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./bg-intro-desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--red);
+}
+
+section{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+.container1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        p{
+            color: white;
+            font-weight:400;
+        }
+}
+
+.container1 h1{
+    color: white;
+    font-weight: 700;
+    
+}
+.container2{
+    background-color:white;
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+        p{
+            text-align: center;
+            font-size: 10px;
+            padding: 0 20px;
+            color: var(--gray900);
+        }
+}
+.Terms {
+    color: var(--red);
+
+}
+
+.right-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.titulo{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--purple700);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 0 var(--purple350);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 25px;
+    
+
+}
+
+.btntrial{
+    width: 80%;
+    padding: 10px;
+    background-color: var(--green);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 0 0.5 var(--purple350);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 25px;
+  
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+legend{
+    width: 100%;
+    text-align: center;
+}
+input{
+    /* display: block; */
+    width: 80% ;
+    padding: 10px;
+    margin: 10px auto;
+    font-weight: bold;
+    border-radius: 3px;
+    border: 1px solid var(--gray900);
+    
+}
+
+input:focus{
+    border: 2px solid var(--purple700);
+    outline: none;
+}
+
+
+footer{
+    text-align: center;
+    padding: 15px 0;
+        a{
+            text-decoration: none;
+        }
+}
+.footer{
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    font-weight: 400;
+    margin-top: 30px;
+    
+}
+
+
+.inputs{
+    width: 80%;
+    margin: 16px auto;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs i {
+    position: absolute;
+    top:50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color:var(--red);
+    display: none;
+
+}
+
+.inputs input {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    padding-right: 40px;
+}
+
+
+
+.error,
+.error em {
+    color: var(--red);
+    font-size: 10px;
+    text-align: right;
+    width: 80%;
+    margin: -10px auto 16px auto;
+    display: none;
+}
+
+
+
+/*CSS PARA LA VALIDACION */
+
+input.valid {
+    border: 2px solid #28a745;
+    outline: none;
+}
+
+input.invalid {
+    border: 2px solid #e03e3e;
+    outline: none;
+}
+
+/* cuando esté en foco, mantener color de estado */
+input.valid:focus {
+    border-color: #28a745;
+    box-shadow: none;
+}
+
+input.invalid:focus {
+    border-color: #e03e3e;
+    box-shadow: none;
+}
+.inputs i.warning {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--red);
+    display: none;
+}
+/* mostrar icono y mensaje cuando tengan la clase "show" */
+.inputs i.warning.show {
+    display: block; 
+ } 
+.error {
+    color: var(--red);
+    font-size: 10px;
+    text-align: right;
+    width: 80%;
+    margin: -10px auto 16px auto;
+    display: none;
+}
+.error.show {
+    display: block;
+}
+
+.error.show em {
+    display: block;
+}
+
+
+@media(width<600px){
+    body{
+        background-image: url(./bg-intro-mobile.png);
+    }
+    section{
+        flex-direction: column;
+    }
+    footer{
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
+    main{
+      padding-bottom: 50px;
+}
+}
