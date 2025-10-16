@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/LauMontironi](https://github.com/LauMontironi/nombre-de-tu-repo)
-- Live Site URL: [(https://github.com/LauMontironi/fm-intro-component-form.git)]
+- Solution URL: [(https://github.com/LauMontironi/fm-intro-component-form.git)]
+- Live Site URL: [https://transcendent-duckanoo-7c00f9.netlify.app]
 
 ---
 
