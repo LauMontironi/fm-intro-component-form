@@ -239,18 +239,71 @@ input.invalid:focus {
 }
 
 
-@media(width<600px){
-    body{
+
+
+@media (max-width: 375px) {
+
+    /* 1. CAMBIOS GENERALES DEL BODY */
+    body {
+        /* Cambia la imagen de fondo a la versión móvil */
         background-image: url(./bg-intro-mobile.png);
+        /* Permite que la altura se ajuste al contenido, evitando el centrado vertical estricto que teníamos */
+        height: auto;
+        /* Ajusta el padding para dar espacio vertical sin causar scroll */
+        padding: 80px 20px;
     }
-    section{
+
+    /* 2. REORDENAR LA SECCIÓN PRINCIPAL */
+    section {
+        /* Pasa de fila a columna */
         flex-direction: column;
+        /* El ancho se ajusta a la nueva vista */
+        width: 100%;
+        height: auto;
+        /* Elimina el margen automático que puede sobrar */
+        margin: 0;
     }
-    footer{
-        margin-top: 100px;
-        margin-bottom: 0;
+
+    /* 3. CONTENEDOR DE TEXTO (container1) */
+    .container1 {
+        /* Ocupa todo el ancho disponible */
+        width: 100%;
+        /* Centra todo el contenido (título y párrafo) */
+        text-align: center;
+        /* Añade espacio antes del formulario */
+        margin-bottom: 50px;
+        padding: 0 10px;
+        /* Pequeño padding para evitar que el texto toque los bordes */
     }
-    main{
-      padding-bottom: 50px;
-}
+
+    .container1 h1 {
+        /* Ajusta el tamaño del título para móvil */
+        font-size: 28px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+
+    /* 4. COLUMNA DERECHA (FORMULARIO) */
+    .right-column {
+        /* Ocupa todo el ancho */
+        width: 100%;
+        /* Elimina el margen izquierdo que separaba las columnas */
+        margin-left: 0;
+        padding: 0 10px;
+    }
+
+    /* 5. AJUSTE DE BOTONES Y CAMPOS (PARA ASEGURAR 100% ANCHO EN MÓVIL) */
+    .titulo,
+    .btntrial,
+    .inputs {
+        /* Ocupan todo el ancho de su contenedor (.right-column o .container2) */
+        width: 100%;
+    }
+
+    /* 6. PIE DE PÁGINA (Footer) */
+    footer {
+        /* Añade espacio en la parte inferior de la pantalla */
+        margin-top: 50px;
+        padding-bottom: 30px;
+    }
 }
