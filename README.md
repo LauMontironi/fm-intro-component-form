@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/LauMontironi](https://github.com/LauMontironi/nombre-de-tu-repo)
-- Live Site URL: [Añade aquí la URL de tu sitio en vivo (por ejemplo, en Netlify o Vercel)](https://tu-sitio-en-vivo.netlify.app)
+- Solution URL: [(https://github.com/LauMontironi/fm-intro-component-form.git)]
+- Live Site URL: [https://transcendent-duckanoo-7c00f9.netlify.app]
 
 ---
 
